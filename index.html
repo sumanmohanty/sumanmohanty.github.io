@@ -7,7 +7,7 @@
     <title>Portflio Suman Mohanty</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
-
+    
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -43,7 +43,32 @@
   ======================================================== -->
   </head>
 
-  <body>
+  <body oncontextmenu="return false">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+</script>
+    
     <!-- ======= Mobile nav toggle button ======= -->
     <button type="button" class="mobile-nav-toggle d-xl-none">
       <i class="icofont-navigation-menu"></i>
